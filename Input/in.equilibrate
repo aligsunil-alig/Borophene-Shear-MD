@@ -1,0 +1,53 @@
+#
+#----------------Initialization------------------ 
+units		metal 
+dimension	3     
+boundary	p p p 
+atom_style	atomic 
+#******************************************************
+read_data	borophene.data
+mass		1 10.81
+mass		2 10.81
+mass		3 10.81
+mass		4 10.81
+mass            5 10.81
+mass            6 10.81
+mass            7 10.81
+mass            8 10.81
+
+# -----------Force fields:Define interaction potential-----------
+pair_style      sw/mod maxdelcs 0.25 0.35
+pair_coeff      * * borophene.sw B1 B2 B3 B4 B5 B6 B7 B8
+
+fix		1 all box/relax x 0.0 y 0.0
+min_style	cg
+minimize	1.0e-25 1.0e-25 10000 100000
+
+unfix		1
+reset_timestep  0
+#---------------------Settings------------------
+# Define timestep to integrate the equations of motion
+timestep	0.001
+
+# Fixing temperature and choice of ensemble
+velocity	all create 1.0 87649 dist gaussian units box
+
+
+#---------------------Fixes------------------
+# Perform NPT simulation to relax the system
+fix 		2 all npt temp 1.0 1.0 0.1 iso 0.0 0.0 1.0 
+
+compute		peratom all pe/atom
+
+
+dump            2 all custom 20000 dumpNPT.* id type x y z c_peratom fx fy fz
+
+#---------------------Output------------------
+### Output the thermodynamic information at specified frequency:
+thermo		25
+thermo_style	custom step temp press atoms ke pe vol 
+thermo_modify	lost warn 
+restart         20000 restart
+
+#---------------------Actions------------------
+run		100000
