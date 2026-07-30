@@ -47,35 +47,65 @@ Figure 6:
       1e7_YX_Shear_1K
       
 Figure 7:
+
       1e9_XY_Shear_1K
+      
       1e9_XY_Shear_100K
+      
       1e9_XY_Shear_200K
+      
       1e9_XY_Shear_300K
+      
       1e9_YX_Shear_1K
+      
       1e9_YX_Shear_100K
+      
       1e9_YX_Shear_200K
+      
       1e9_YX_Shear_300K
+      
       1e8_XY_Shear_1K
+      
       1e8_XY_Shear_100K
+      
       1e8_XY_Shear_200K
+      
       1e8_XY_Shear_300K
+      
       1e8_YX_Shear_1K
+      
       1e8_YX_Shear_100K
+      
       1e8_YX_Shear_200K
+      
       1e8_YX_Shear_300K
+      
       1e7_XY_Shear_1K
+      
       1e7_XY_Shear_100K
+      
       1e7_XY_Shear_200K
+      
       1e7_XY_Shear_300K
+      
       1e7_YX_Shear_1K
+      
       1e7_YX_Shear_100K
+      
       1e7_YX_Shear_200K
+      
       1e7_YX_Shear_300K
       
-**Figure 9:**      
+Figure 9:
+
       1e9_XY
+      
       1e9_YX
+      
       1e8_XY
+      
       1e8_YX
+      
       1e7_XY
+      
       1e7_YX
