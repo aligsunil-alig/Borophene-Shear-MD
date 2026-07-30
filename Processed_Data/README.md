@@ -5,6 +5,7 @@ This folder contains the processed numerical data used to generate all figures i
 Figure 2
       1e9_XY_Shear_1K
       1e9_YX_Shear_1K
+      
 Figure 4
       200000_XY_1e9_1K.txt
       200000_YX_1e9_1K.txt
