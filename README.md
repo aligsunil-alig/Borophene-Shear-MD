@@ -13,19 +13,27 @@ The repository has been organized to facilitate reproducibility of the molecular
 **Repository Structure**
 
 Borophene-Shear-MD/
-│
-├── Gnuplot/
-├── Input/
-├── OVITO/
-├── Processed_Data/
-└── Representative_Output/
+
+      Gnuplot/
+      
+      Input/
+      
+      OVITO/
+      
+      Processed_Data/
+      
+      Representative_Output/
 
 A brief description of each folder is provided below. More detailed information is available in the corresponding README.md file within each folder.
 
 Gnuplot:	Gnuplot scripts used for plotting the processed datasets.
+
 Input:	LAMMPS input files, initial borophene structure, and interatomic potential files.
+
 OVITO:	Settings for RDF calculations.
+
 Processed_Data:	Processed numerical datasets used to generate the figures in the manuscript.
+
 Representative_Output:	Representative LAMMPS output files for verification and reference.
 
 **Simulation Workflow**
