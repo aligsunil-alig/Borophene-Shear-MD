@@ -58,9 +58,10 @@ Gnuplot (version: 6.0)
 The processed datasets included in this repository were used to generate the figures presented in the manuscript. The corresponding Gnuplot scripts are provided to reproduce the published plots. Detailed instructions are available in the README.md files within the respective folders.
 
 
-**Citation**
+## Data License
 
-If you use the data or scripts provided in this repository, please cite the associated journal article after publication.
+The processed datasets and documentation contained in this repository are provided to support the associated research publication. If you use these data, please cite the associated journal article.
+
 
 **Contact**
 
